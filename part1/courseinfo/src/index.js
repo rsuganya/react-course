@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Hook from './hook.js';
+import LeftRight from './rightleft.js';
 
 const Header = (props) => {
   return (
@@ -37,6 +39,8 @@ const Total = (props) => {
   );
 }
 
+
+
 const App = () => {
 
   const course = {
@@ -68,8 +72,11 @@ const App = () => {
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Hook/>
+    <LeftRight/>
   </React.StrictMode>,
   document.getElementById('root')
 );
+
 
 
